@@ -1,0 +1,9 @@
+services:
+  fastapy-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/projectfastapi_py
+    ports:
+      - '8000:8000'
